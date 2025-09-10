@@ -1,10 +1,7 @@
 package Design-Patterns;
-public class Immutable{
 
-}
-Rules for Immutable Class
-
-/*`
+// ## Rules for Immutable Class
+/*
 1.Declare the class as final
     → So it cannot be subclassed.
 
@@ -23,3 +20,50 @@ Rules for Immutable Class
         return a copy instead of the actual reference.
 
  */
+
+//Rule 1 : final class
+public final class Immutable{
+    //Rule 2: private fields
+    private final String name;
+    private final int age;
+    private final Address address;
+
+    //Rule 3
+    public Student(String name, int age, Address address) {
+        this.name = name;
+        this.age = age;
+        // Rule 5: Deep copy for mutable object
+        this.address = new Address(address.getCity(), address.getState());
+    }
+
+
+    //Rule 4
+    //Getters to access the values
+    public String getName() {
+        return name;
+    }
+    public int getAge() {
+        return age;
+    }
+    public Address getAddress() {
+        return address;
+    }
+    // No Setter provided. so that no value can be modified
+}
+
+
+//Mutalble class
+class Address {
+    private String city;
+    private String state;
+
+    public Address(String city, String state) {
+        this.city = city;
+        this.state = state;
+    }
+
+    //Provide getters to access value
+
+    // Provide setters make this mutable
+
+}
