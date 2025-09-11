@@ -1,7 +1,8 @@
 package Design-Patterns;
 
-// ## Rules for Immutable Class
 /*
+## Rules for Immutable Class
+
 1.Declare the class as final
     → So it cannot be subclassed.
 
