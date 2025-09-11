@@ -3,7 +3,6 @@ package Design-Patterns.SOLID.Single-Responsibility-Principle;
 public class SRP2 {
 //    The Employee class in previous implementation has two reasons to change:
 //    if the pay calculation logic changes or if the report generation logic changes.
-
 //    A better approach is to separate these responsibilities into different classes.
 }
 
