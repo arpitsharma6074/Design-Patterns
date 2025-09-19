@@ -2,29 +2,43 @@ package Design-Patterns.SOLID.Interface-Segregation-Principle;
 
 public class ISP1{
 /*
-This principle, named after Barbara Liskov, states that objects of a superclass
- should be replaceable with objects of its subclasses without affecting the
- correctness of the program. In simpler terms, a subclass should extend its
- superclass without changing its behavior.
+     The Interface Segregation Principle states that clients should not be forced to
+     depend on interfaces they do not use. It’s better to have many small,
+     specific interfaces than one large, all-encompassing interface.
  */
 }
-
-// Bad example - violates LSP
-class Bird {
-    public void fly() {
-        // logic for flying
-    }
+// Imagine a large interface for a complex machine.
+// Bad example - violates ISP
+interface MultiFunctionPrinter {
+    void print();
+    void scan();
+    void fax();
+    void staple();
 }
 
-class Ostrich extends Bird {
+
+class SimplePrinter implements MultiFunctionPrinter {
     @Override
-    public void fly() {
-        throw new UnsupportedOperationException("Ostriches can't fly.");
+    public void print() {
+        System.out.println("Printing...");
+    }
+    @Override
+    public void scan() {
+        // Not supported, but must be implemented
+        throw new UnsupportedOperationException("Scanning not supported.");
+    }
+    @Override
+    public void fax() {
+        // Not supported
+        throw new UnsupportedOperationException("Faxing not supported.");
+    }
+    @Override
+    public void staple() {
+        // Not supported
+        throw new UnsupportedOperationException("Stapling not supported.");
     }
 }
-
 /*
-Here, a client using a Bird object might expect to call the fly() method
-without issues. However, if an Ostrich object is substituted, it will throw
-an exception, violating the client's expectation and the LSP.
+    The SimplePrinter is forced to implement methods it doesn't use,
+    which is a violation of ISP.
  */
