@@ -1,0 +1,6 @@
+The Facade Design Pattern is a structural design pattern that provides a simplified
+interface to a complex system of classes, libraries, or frameworks.
+
+Think of it as a front desk in a hotel – instead of directly contacting housekeeping,
+room service, and maintenance individually, you just call the front desk (facade),
+which internally communicates with the right department.
