@@ -23,7 +23,7 @@ class House {
     public String toString() {
         return "House [walls=" + walls + ", roof=" + roof + ", floor=" + floor + "]";
     }
-
+    
     // Builder Class
     static class HouseBuilder {
         private String walls;
