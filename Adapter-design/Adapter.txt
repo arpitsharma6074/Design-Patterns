@@ -1,0 +1,7 @@
+The adapter design pattern is a structural design pattern that acts as a
+bridge between two incompatible interfaces, allowing objects with different
+interfaces to work together by converting one interface into another that
+clients expect. It acts as a wrapper or mediator, translating requests from
+the client into a format the target object understands without modifying the
+client or the target's original source code. This pattern is particularly useful
+for integrating existing code, such as legacy systems, into new applications.
