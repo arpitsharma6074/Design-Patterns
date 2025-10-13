@@ -1,0 +1,6 @@
+The Dependency Inversion Principle states that high-level modules should not
+depend on low-level modules. Both should depend on abstractions. Additionally,
+abstractions should not depend on details; details should depend on abstractions.
+
+This principle is often confused with dependency injection but is a broader concept.
+It promotes loose coupling between components.
