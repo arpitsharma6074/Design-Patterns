@@ -2,9 +2,7 @@ package Design-Patterns.SOLID.Interface-Segregation-Principle;
 
 public class ISP1{
 /*
-     The Interface Segregation Principle states that clients should not be forced to
-     depend on interfaces they do not use. It’s better to have many small,
-     specific interfaces than one large, all-encompassing interface.
+
  */
 }
 // Imagine a large interface for a complex machine.

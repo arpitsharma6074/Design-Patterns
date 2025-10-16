@@ -1,13 +1,6 @@
 package Design-Patterns.SOLID.Liskov-Substitution-Principle;
 
-Public class LSP2{
-/*
-    This principle, named after Barbara Liskov, states that objects of a
-    superclass should be replaceable with objects of its subclasses without
-    affecting the correctness of the program. In simpler terms, a subclass
-    should extend its superclass without changing its behavior.
- */
-}
+Public class LSP2{}
 
 // Good example - follows LSP
 interface Flight {

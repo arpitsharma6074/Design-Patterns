@@ -1,15 +1,6 @@
 package Design-Patterns.SOLID.Dependency-Inversion-Principle;
 
-Public class DIP1{
-/*
-    The Dependency Inversion Principle states that high-level modules should not
-    depend on low-level modules. Both should depend on abstractions. Additionally,
-    abstractions should not depend on details; details should depend on abstractions.
-
-    This principle is often confused with dependency injection but is a broader concept.
-    It promotes loose coupling between components.
- */
-}
+Public class DIP1{}
 
 //Example
 //Consider a Store class that directly depends on a concrete CreditCard class.

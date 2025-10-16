@@ -1,13 +1,5 @@
 package Design-Patterns.SOLID.Open-Close-Principle;
-public class OCP2{
-/*
-    The Open/Closed Principle states that software
-    entities(classes, modules, functions, etc.) should be open for extension
-    but closed for modification. This means you should be able to
-    add new functionality without changing existing code.
-
- */
-}
+public class OCP2{}
 /*
 If you wanted to add a new shape, like a Triangle, you’d have to modify
 the AreaCalculator class in previous inmplementation.
